@@ -1,0 +1,374 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", sans-serif;
+}
+
+body{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(135deg,#0f172a,#020617);
+
+color:white;
+
+}
+
+
+/* MAIN CARD */
+
+.container{
+
+width:420px;
+padding:35px;
+
+border-radius:16px;
+
+background:rgba(255,255,255,0.05);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,0.1);
+
+box-shadow:0 20px 50px rgba(0,0,0,0.5);
+
+}
+
+
+/* TITLE */
+
+h1{
+
+text-align:center;
+margin-bottom:25px;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+color:#22d3ee;
+
+}
+
+
+/* PASSWORD FIELD */
+
+.password-box{
+
+display:flex;
+margin-bottom:20px;
+
+}
+
+.password-box input{
+
+flex:1;
+
+padding:12px;
+
+border-radius:8px;
+
+border:none;
+
+outline:none;
+
+font-size:16px;
+
+background:#020617;
+
+color:#22d3ee;
+
+border:1px solid #1e293b;
+
+}
+
+.password-box button{
+
+margin-left:6px;
+
+border:none;
+
+background:#06b6d4;
+
+color:black;
+
+padding:10px 12px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:0.2s;
+
+}
+
+.password-box button:hover{
+
+background:#22d3ee;
+
+transform:scale(1.05);
+
+}
+
+
+/* LENGTH */
+
+.length-box{
+
+margin-bottom:20px;
+
+font-size:14px;
+
+}
+
+.length-box input{
+
+width:100%;
+
+margin-top:8px;
+
+}
+
+
+/* OPTIONS */
+
+.options{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:10px;
+
+margin-bottom:20px;
+
+font-size:14px;
+
+}
+
+
+/* GENERATE BUTTON */
+
+#generate{
+
+width:100%;
+
+padding:12px;
+
+background:#22d3ee;
+
+color:black;
+
+border:none;
+
+border-radius:10px;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+#generate:hover{
+
+background:#67e8f9;
+
+transform:translateY(-2px);
+
+}
+
+
+/* STRENGTH */
+
+.strength{
+
+margin-top:18px;
+
+font-size:14px;
+
+}
+
+.strength-bar{
+
+height:10px;
+
+background:#1e293b;
+
+border-radius:8px;
+
+margin-top:6px;
+
+overflow:hidden;
+
+}
+
+#strengthFill{
+
+height:100%;
+
+width:50%;
+
+background:#22d3ee;
+
+transition:0.4s;
+
+}
+
+
+/* SECURITY INFO */
+
+.security-info{
+
+margin-top:15px;
+
+font-size:13px;
+
+color:#94a3b8;
+
+}
+
+
+/* BUTTONS */
+
+.extra-buttons{
+
+display:flex;
+
+gap:10px;
+
+margin-top:15px;
+
+}
+
+.extra-buttons button{
+
+flex:1;
+
+padding:10px;
+
+background:#020617;
+
+border:1px solid #22d3ee;
+
+color:#22d3ee;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.extra-buttons button:hover{
+
+background:#22d3ee;
+
+color:black;
+
+}
+
+
+/* HISTORY */
+
+.history{
+
+margin-top:20px;
+
+font-size:13px;
+
+}
+
+.history h3{
+
+margin-bottom:6px;
+
+color:#22d3ee;
+
+}
+
+.history ul{
+
+padding-left:15px;
+
+color:#cbd5f5;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+.container{
+
+width:90%;
+
+}
+
+}
+/* LIGHT MODE */
+
+.light-mode{
+
+background:linear-gradient(135deg,#e2e8f0,#f8fafc);
+color:#0f172a;
+
+}
+
+.light-mode .container{
+
+background:white;
+color:#0f172a;
+border:1px solid #e2e8f0;
+
+}
+
+.light-mode .password-box input{
+
+background:#f1f5f9;
+color:#0f172a;
+border:1px solid #cbd5f5;
+
+}
+
+.light-mode #generate{
+
+background:#6366f1;
+color:white;
+
+}
+
+.light-mode #generate:hover{
+
+background:#4f46e5;
+
+}
+
+.light-mode .extra-buttons button{
+
+border:1px solid #6366f1;
+color:#6366f1;
+
+}
+
+.light-mode .extra-buttons button:hover{
+
+background:#6366f1;
+color:white;
+
+}
+
+.light-mode .history h3{
+
+color:#6366f1;
+
+}
